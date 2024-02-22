@@ -5,11 +5,7 @@ print(heights)
 def flechasmin(k: int,alturas: list):
     flechas=1
     h=altura[0]
-    for i in range(1,k+1):
-        if (altura[i]=)
-    "se flecha for igual altura diminuir um"
-
-    'Se a altura da flecha for 1 colocar a altura pro próximo balão'
+    for i range
 
 
 

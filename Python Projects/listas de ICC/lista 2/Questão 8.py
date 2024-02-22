@@ -1,6 +1,6 @@
 import random
 
-V=[random.randint(0,100) for _ in range(100)]
+V=[random.randint(0,10) for _ in range(100)]
 print(V)
 
 def selection(list):

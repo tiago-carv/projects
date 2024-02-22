@@ -10,9 +10,9 @@ print(Vet)
 
 def embaralhar(A: list):
 	A_embaralhada=[]
-	for i in range(N):
-		aux=Vet[i]
-		k=randint(0,N-1)
+	for i in range(len(A)):
+		aux=A[i]
+		k=randint(0,len(A)-1)
 		A[i]=A[k]
 		A[k]=aux
 		
