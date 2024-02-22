@@ -12,3 +12,5 @@ if(z-2*k==0):
     print('É um triângulo retângulo')
 else:
     print('não é um triângulo retângulo')
+input('Aperte qualquer tecla para finalizar')
+exit()

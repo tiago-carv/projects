@@ -1,0 +1,20 @@
+função melhorjogada(Matriz){
+    vazia=[0,0,0]
+        Para j de 0 até 2{
+            Para i de 0 até 2{
+                Se Matriz[i][j]=""
+                    vazia[j]=vazia[j]+1
+            }
+        }  
+    contcol[3]=[0,0,0]
+        Para j de 0 até 2{
+            Para i de 0 até 2{
+                se Matriz[i][j]=="X"
+                    contcol[j]=contcol[j]+1
+            }
+        }
+
+
+}
+
+
