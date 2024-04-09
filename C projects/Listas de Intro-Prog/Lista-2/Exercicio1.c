@@ -18,18 +18,20 @@ int seg_novo = segundos_total%60;
 int minutos_novo = (segundos_total-seg_novo)/60;
 int horas_novo = (minutos_novo-minutos_novo%60)/60;
 
-if(minutos_novo<10){
-    if(seg_novo<10){
-        printf("%d:0%d:0%d\n",horas_novo%60,minutos_novo%60,seg_novo);
-    }else{
-        printf("%d:0%d:%d\n",horas_novo%60,minutos_novo%60,seg_novo);
-    }
+if(minutos_novo<10&&seg_novo<10){
+    printf("%d:0%d:0%d\n",horas_novo%60,minutos_novo%60,seg_novo);
 }else{
-    if (seg_novo<10){
+    if(minutos_novo<10){
+    printf("%d:0%d:%d\n",horas_novo%60,minutos_novo%60,seg_novo);
+    }else{
+        if (seg_novo<10){
+            printf("%d:%d:0%d\n",horas_novo%60,minutos_novo%60,seg_novo);
+        }else{
         printf("%d:%d:0%d\n",horas_novo%60,minutos_novo%60,seg_novo);
-    }
-    else{
-        printf("%d:%d:0%d\n",horas_novo%60,minutos_novo%60,seg_novo);
+        }
     }
 }
+
+
+
 }
