@@ -1,32 +1,31 @@
 tamanho=5
-Malha=[[0]*tamanho]*tamanho
+Malha = [[0 for _ in range(tamanho)] for _ in range(tamanho)]
 def mostramalha(Matriz):
     k=len(Matriz)
     for i in range(k):
         for j in range(k):
-            if (j==(k-1)&(i!=k-1)):
-                print(" ")
             print(f'{Matriz[i][j]} ', end="")
-    print(" ")
-a = 1
-a=int(input("Digite 1 para continuar ou 0 para parar:"))
-while(a!=0):
+        print(" ")
+
+def foradabordas(x,y):
+    if (0<x<tamanho)and(0<=y<tamanho):
+        return 0
+    
+while(True):
     i, j, sinal=input().split()
-    i = int(i)
-    j = int(j)
-    sinal = str(sinal)
+    i, j= int(i) ,int(j)
     
     if(sinal=="+"):
         for k in range(-1,2):
             for l in range(-1,2):
-                Malha[i][j]+=1
+                Malha[i+k][j+l]+=1
     else:
         for k in range(-1,2):
             for l in range(-1,2):
-                Malha[i][j]-=1
-    print(i)
-    print(j)
-    print(Malha[i][j])
+                Malha[i+k][j+l]-=1
+    print(" ")
+    mostramalha(Malha)
     a=int(input("Digite 1 para continuar ou 0 para parar:"))
-
+    if (a==0):
+        break
 mostramalha(Malha)
