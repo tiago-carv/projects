@@ -16,5 +16,6 @@ while(True):
         a,b = map(int,input().split())
         c = fat(a)+fat(b)
         print(c)
+        print(memo)
     except EOFError:
         break

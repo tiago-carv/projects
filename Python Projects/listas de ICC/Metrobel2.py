@@ -12,8 +12,7 @@ def foradabordas(x,y):
         return 0
     
 while(True):
-    i, j, sinal=input().split()
-    i, j= int(i) ,int(j)
+    i, j, sinal=map(int,input().split())
     
     if(sinal=="+"):
         for k in range(-1,2):
